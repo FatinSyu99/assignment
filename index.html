@@ -75,52 +75,57 @@ body, html {
 </div>
 
 <!-- Menu Container -->
-<div class="container" id="menu">
-  <div class="content" style="max-width:700px">
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
  
-    <h5 style="font-family: 'Permanent Marker', cursive;" align="center"><span class= "darkblue">THE MENU</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
   
-    <div class="row center card padding">
+    <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="col s6 tablink">Eat</div>
+        <div class="w3-col s6 tablink">Eat</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="col s6 tablink">Drink</div>
+        <div class="w3-col s6 tablink">Drink</div>
       </a>
     </div>
 
     <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+      <h5>Crepe</h5>
+      <p class="w3-text-blue">All types RM5.50</p>
+      <p><img src="https://hips.hearstapps.com/hmg-prod/images/delish-basic-crepes-horizontal-1545245797.jpg" width="50px", align="center"></p><br>
     
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+      <h5>Cake</h5>
+      <p class="w3-text-blue">Chocolate RM6.50, Cheese RM7.00, Blueberry, Velvet and others RM7.50 </p>
+      <p><img src="https://cdn.shopify.com/s/files/1/0046/1969/8210/products/mix-and-match-slices-3_1024x.jpg?v=1603171676" width="50px", align="center"></p><br>
     
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+      <h5>Waffle and Garlic Bread</h5>
+      <p class="w3-text-blue">Waffle with honey/chocolate/other jam and One loaf of garlic bread RM8.00</p>
+      <p><img src="https://www.deliciousandsons.com/wp-content/uploads/2017/10/bodegon-tortilla-patatas-alioli-azafran-gofrera-1-1200x800.jpg" width="50px", align="center"></p><br>
     
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+      <h5>Toast and Scrambled Eggs </h5>
+      <p class="w3-text-blue">Two slices of toast, Scrambled eggs and Roasted red beans RM7.00</p>
+      <p><img src="https://www.diningandcooking.com/wp-content/uploads/2020/07/910irmsgrad51.jpg" width="50px", align="center"></p><br>
     
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+      <h5>Pancakes</h5>
+      <p class="w3-text-blue">With syrup, butter and lots of toppings RM7.50</p>
+      <p><img src="https://media.eggs.ca/assets/RecipePhotos/_resampled/FillWyIxMjgwIiwiNzIwIl0/Fluffy-Pancakes-New-CMS.jpg" width="50px", align="center"></p>
     </div>
 
     <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+      <h5>Coffee and Tea</h5>
+      <p class="w3-text-blue">Regular RM2.50, Milk RM3.00</p><br>
     
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+      <h5>Milkshake</h5>
+      <p class="w3-text-blue">Chocolate, Strawberry, Coconut, etc RM4.50</p><br>
     
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+      <h5>Juice</h5>
+      <p class="w3-text-blue">All types of fruit juice RM4.00</p><br>
     
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+      <h5>Iced Drink</h5>
+      <p class="w3-text-blue">Small RM2.50, Regular RM4.00</p><br>
     
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+      <h5>Soft Drink</h5>
+      <p class="w3-text-blue">Coke, Sprite, Fanta, etc RM2.50</p>
     </div>  
     <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
   </div>
@@ -147,3 +152,32 @@ body, html {
 </div>
 
 <!-- End page content -->
+  </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
+  
